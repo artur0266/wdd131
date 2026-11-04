@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #f8f9fa;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --accent-hover: #4fa8c7;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#titulo-curso {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 0.6rem 0;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    align-items: flex-start;
+}
+
+.about-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.about-content img {
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.location-section {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+}
+
+.location-section h3 {
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.location-details {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.location-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.flag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.flag-container img {
+    border: 1px solid #ddd;
+}
+
+.flag-caption {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: #666;
+}
+
+/* Lista de Recursos */
+.resource-list {
+    list-style-type: disc;
+    padding: 1.5rem 2rem;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: 0.8rem;
+}
+
+.resource-list a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#ultimaModificacao {
+    color: #ffe600;
+    font-size: 0.85rem;
+}
