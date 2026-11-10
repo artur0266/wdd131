@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navegação */
+header {
+  background-color: #3b0956;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  display: none;         /* Escondido por padrão no mobile */
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+nav ul.open {
+  display: flex;         /* Exibido ao clicar no hambúrguer */
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #591082;
+  font-weight: bold;
+}
+
+/* Conteúdo Principal */
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Galeria com CSS Grid (1 coluna no Mobile) */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.75rem;
+  color: #3b0956;
+  font-size: 0.9rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #3b0956;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#lastModified {
+  color: #e0d0f0;
+}
+
+header h1 {
+  color: #ffffff;
+}
