@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página informativa sobre o Rio de Janeiro, Brasil, com dados geográficos, imagem responsiva e cálculo de sensação térmica.">
+  <meta name="author" content="Artur Cesar de França">
+  <title>Rio de Janeiro, Brasil — Página Local</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Rio de Janeiro, Brasil</h1>
+  </header>
+
+  <main class="main-content">
+    <picture class="hero-media">
+      <source media="(min-width: 768px)" srcset="imagens/local-grande.webp">
+      <img src="imagens/local-pequeno.webp" alt="Vista panorâmica do Rio de Janeiro, Brasil">
+    </picture>
+
+    <section class="card data-card" aria-labelledby="data-heading">
+      <h2 id="data-heading">Dados</h2>
+      <dl class="info-list">
+        <div class="info-row">
+          <dt>Área:</dt>
+          <dd>43.750 km²</dd>
+        </div>
+        <div class="info-row">
+          <dt>População:</dt>
+          <dd>16.055.174</dd>
+        </div>
+        <div class="info-row">
+          <dt>Capital:</dt>
+          <dd>Rio de Janeiro</dd>
+        </div>
+        <div class="info-row">
+          <dt>Idiomas:</dt>
+          <dd>Português</dd>
+        </div>
+        <div class="info-row">
+          <dt>Moeda:</dt>
+          <dd>Real (BRL)</dd>
+        </div>
+        <div class="info-row">
+          <dt>Fuso horário:</dt>
+          <dd>UTC-3</dd>
+        </div>
+        <div class="info-row">
+          <dt>Código telefônico:</dt>
+          <dd>+55 (21)</dd>
+        </div>
+        <div class="info-row">
+          <dt>Domínio (TLD):</dt>
+          <dd>.br</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="card weather-card" aria-labelledby="weather-heading">
+      <h2 id="weather-heading" class="weather-title">Clima</h2>
+
+      <img
+        class="weather-icon-mobile"
+        src="imagens/weather-icon.svg"
+        alt="Ícone de tempo parcialmente nublado"
+        width="56"
+        height="56"
+      >
+
+      <dl class="info-list">
+        <div class="info-row">
+          <dt>Temperatura:</dt>
+          <dd><span id="temp-value">10</span> °C</dd>
+        </div>
+        <div class="info-row">
+          <dt>Condições:</dt>
+          <dd id="conditions-value">Parcialmente nublado</dd>
+        </div>
+        <div class="info-row">
+          <dt>Vento:</dt>
+          <dd><span id="wind-value">8</span> km/h</dd>
+        </div>
+        <div class="info-row">
+          <dt>Sensação térmica:</dt>
+          <dd id="windchill-value">Calculando...</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> • Artur Cesar de França • Brasil</p>
+    <p>Última modificação: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
