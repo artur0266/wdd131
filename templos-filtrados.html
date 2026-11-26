@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo Filtrado</title>
+    <meta name="description" content="Álbum dinâmico e filtrável de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.">
+    <meta name="author" content="Artur Cesar de França">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Álbum do Templo</h1>
+            <button id="hamburger" aria-label="Menu">&#9776;</button>
+        </div>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="#" id="home" class="active">Página Inicial</a></li>
+                <li><a href="#" id="old">Antigo</a></li>
+                <li><a href="#" id="new">Novo</a></li>
+                <li><a href="#" id="large">Grande</a></li>
+                <li><a href="#" id="small">Pequeno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="page-title">Página Inicial</h2>
+        <div class="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Artur Cesar de França Rio de Janeiro</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
